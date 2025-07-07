@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./static/Header";
 import Footer from "./static/Footer";
-import Hero from "./components/block/home/Hero";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import PiggyBank from "./pages/PiggyBank";
@@ -10,7 +9,7 @@ import Stories from "./pages/Stories";
 
 const App = () => {
   return (
-    <div className="bg-amber-500 max-tablet:bg-red-600">
+    <div>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -20,7 +19,6 @@ const App = () => {
           <Route path="/Stories" element={<Stories />} />
           {/* <Route path="/footer" element={<Footer />} /> */}
         </Routes>
-        <Hero />
         <Footer />
       </BrowserRouter>
     </div>

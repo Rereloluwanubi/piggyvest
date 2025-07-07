@@ -4,7 +4,7 @@ const PiggyBank = () => {
   return (
     <div>
         <h1>This is the piggybank</h1>
-      <img src="" alt="" />
+      <img src="./logo.svg" alt="" />
 
     </div>
   )
