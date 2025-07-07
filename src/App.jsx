@@ -1,10 +1,12 @@
 import React from "react";
 import Header from "./static/Header";
-import Hero from "./components/block/Hero";
+import Footer from "./static/Footer";
+import Hero from "./components/block/home/Hero";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import PiggyBank from "./pages/PiggyBank";
+import Invest from "./pages/Invest";
+import Stories from "./pages/Stories";
 
 const App = () => {
   return (
@@ -13,9 +15,13 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/piggybank" element={<PiggyBank />} />
+          <Route path="/invest" element={<Invest />} />
+          <Route path="/Stories" element={<Stories />} />
+          {/* <Route path="/footer" element={<Footer />} /> */}
         </Routes>
+        <Hero />
+        <Footer />
       </BrowserRouter>
     </div>
   );
